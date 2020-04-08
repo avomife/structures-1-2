@@ -1,0 +1,33 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils, UQueueArray;
+
+var
+  el, c: TElem;
+  Q: TQueue;
+  ok: Boolean;
+  code: integer;
+
+begin
+  Writeln('Input sequence');
+  Init(Q);
+    read(el);
+    //if el>) then
+   //   writeln('no');
+  while (el<>0) do
+  begin
+    if (el < 0) then
+      Push(Q, el)
+    else
+      write(el, ' ');
+    read(el);
+  end;
+
+  while TryPop(Q, el) do
+    write (el, ' ');
+  Readln;
+  Readln;
+end.
