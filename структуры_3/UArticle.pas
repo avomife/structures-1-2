@@ -55,15 +55,19 @@ end;
 procedure TArticle.Input;
 var
   hel: integer;
+  input1, input2: string;
 begin
   inherited input;
   writeln('Ââåäèòå íàçâàíèå æóðíàëà');
   readln(fnameArt);
   repeat
     writeln('Ââåäèòå ñòðàíèöó íà÷àëà');
-    readln(fstartPg);
+    readln(input1);
+    trystrtoint(input1, fstartPg);
+    
     writeln('Ââåäèòå ñòðàíèöó êîíöà');
-    readln(fendPg);
+    readln(input2);
+    trystrtoint(input2, fendPg);
   until (fstartPg>0) and (fendPg>0);
   if fendPg < fstartPg then
     begin
