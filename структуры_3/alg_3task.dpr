@@ -1,13 +1,13 @@
-{Задан некоторый родительский класс. От него должно быть определено несколько
-потомков. Определить класс Список элементов, который может одновременно содержать
-разных потомков базового класса. Реализовать операции добавления элемента в список,
-удаление элемента из списка, поиск элемента в списке и другие. Решить задачи.
+{Г‡Г Г¤Г Г­ Г­ГҐГЄГ®ГІГ®Г°Г»Г© Г°Г®Г¤ГЁГІГҐГ«ГјГ±ГЄГЁГ© ГЄГ«Г Г±Г±. ГЋГІ Г­ГҐГЈГ® Г¤Г®Г«Г¦Г­Г® ГЎГ»ГІГј Г®ГЇГ°ГҐГ¤ГҐГ«ГҐГ­Г® Г­ГҐГ±ГЄГ®Г«ГјГЄГ®
+ГЇГ®ГІГ®Г¬ГЄГ®Гў. ГЋГЇГ°ГҐГ¤ГҐГ«ГЁГІГј ГЄГ«Г Г±Г± Г‘ГЇГЁГ±Г®ГЄ ГЅГ«ГҐГ¬ГҐГ­ГІГ®Гў, ГЄГ®ГІГ®Г°Г»Г© Г¬Г®Г¦ГҐГІ Г®Г¤Г­Г®ГўГ°ГҐГ¬ГҐГ­Г­Г® Г±Г®Г¤ГҐГ°Г¦Г ГІГј
+Г°Г Г§Г­Г»Гµ ГЇГ®ГІГ®Г¬ГЄГ®Гў ГЎГ Г§Г®ГўГ®ГЈГ® ГЄГ«Г Г±Г±Г . ГђГҐГ Г«ГЁГ§Г®ГўГ ГІГј Г®ГЇГҐГ°Г Г¶ГЁГЁ Г¤Г®ГЎГ ГўГ«ГҐГ­ГЁГї ГЅГ«ГҐГ¬ГҐГ­ГІГ  Гў Г±ГЇГЁГ±Г®ГЄ,
+ГіГ¤Г Г«ГҐГ­ГЁГҐ ГЅГ«ГҐГ¬ГҐГ­ГІГ  ГЁГ§ Г±ГЇГЁГ±ГЄГ , ГЇГ®ГЁГ±ГЄ ГЅГ«ГҐГ¬ГҐГ­ГІГ  Гў Г±ГЇГЁГ±ГЄГҐ ГЁ Г¤Г°ГіГЈГЁГҐ. ГђГҐГёГЁГІГј Г§Г Г¤Г Г·ГЁ.
 
-   "Публикации". Реализовать следующую иерархию классов: любая публикация имеет
-    название, автора(авторов) и год издания. Для книги всегда задано количество
-    страниц. Для статьи указываются номера страниц(диапазон) и название сборника,
-    в котором опубликована данная статья. Задан список публикаций. Сделать выборку
-    публикаций заданного автора, вышедших в течение определенного периода времени.}
+   "ГЏГіГЎГ«ГЁГЄГ Г¶ГЁГЁ". ГђГҐГ Г«ГЁГ§Г®ГўГ ГІГј Г±Г«ГҐГ¤ГіГѕГ№ГіГѕ ГЁГҐГ°Г Г°ГµГЁГѕ ГЄГ«Г Г±Г±Г®Гў: Г«ГѕГЎГ Гї ГЇГіГЎГ«ГЁГЄГ Г¶ГЁГї ГЁГ¬ГҐГҐГІ
+    Г­Г Г§ГўГ Г­ГЁГҐ, Г ГўГІГ®Г°Г (Г ГўГІГ®Г°Г®Гў) ГЁ ГЈГ®Г¤ ГЁГ§Г¤Г Г­ГЁГї. Г„Г«Гї ГЄГ­ГЁГЈГЁ ГўГ±ГҐГЈГ¤Г  Г§Г Г¤Г Г­Г® ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ®
+    Г±ГІГ°Г Г­ГЁГ¶. Г„Г«Гї Г±ГІГ ГІГјГЁ ГіГЄГ Г§Г»ГўГ ГѕГІГ±Гї Г­Г®Г¬ГҐГ°Г  Г±ГІГ°Г Г­ГЁГ¶(Г¤ГЁГ ГЇГ Г§Г®Г­) ГЁ Г­Г Г§ГўГ Г­ГЁГҐ Г±ГЎГ®Г°Г­ГЁГЄГ ,
+    Гў ГЄГ®ГІГ®Г°Г®Г¬ Г®ГЇГіГЎГ«ГЁГЄГ®ГўГ Г­Г  Г¤Г Г­Г­Г Гї Г±ГІГ ГІГјГї. Г‡Г Г¤Г Г­ Г±ГЇГЁГ±Г®ГЄ ГЇГіГЎГ«ГЁГЄГ Г¶ГЁГ©. Г‘Г¤ГҐГ«Г ГІГј ГўГ»ГЎГ®Г°ГЄГі
+    ГЇГіГЎГ«ГЁГЄГ Г¶ГЁГ© Г§Г Г¤Г Г­Г­Г®ГЈГ® Г ГўГІГ®Г°Г , ГўГ»ГёГҐГ¤ГёГЁГµ Гў ГІГҐГ·ГҐГ­ГЁГҐ Г®ГЇГ°ГҐГ¤ГҐГ«ГҐГ­Г­Г®ГЈГ® ГЇГҐГ°ГЁГ®Г¤Г  ГўГ°ГҐГ¬ГҐГ­ГЁ.}
 program alg_3task;
 
 {$APPTYPE CONSOLE}
@@ -15,12 +15,12 @@ program alg_3task;
 uses
   SysUtils,
   windows,
-  UList in 'D:\pomosch\помощь\Algoritmy_i_struktury\Задача 3 Классы\UList.pas',
-  uAuthorList in 'D:\pomosch\помощь\Algoritmy_i_struktury\Задача 3 Классы\uAuthorList.pas',
-  UPublication in 'D:\pomosch\помощь\Algoritmy_i_struktury\Задача 3 Классы\UPublication.pas',
-  UAdditionlFunction in 'D:\pomosch\помощь\Algoritmy_i_struktury\Задача 3 Классы\UAdditionlFunction.pas',
-  Ubook in 'D:\pomosch\помощь\Algoritmy_i_struktury\Задача 3 Классы\Ubook.pas',
-  UArticle in 'D:\pomosch\помощь\Algoritmy_i_struktury\Задача 3 Классы\UArticle.pas';
+  UList in 'UList.pas',
+  uAuthorList in 'uAuthorList.pas',
+  UPublication in 'UPublication.pas',
+  UAdditionlFunction in 'UAdditionlFunction.pas',
+  Ubook in 'Ubook.pas',
+  UArticle in 'UArticle.pas';
 
 procedure PrintList (var l:TListPbl);
 begin
@@ -33,12 +33,12 @@ var
 begin
   publ:=nil;
   result:=true;
-  writeln('Введите A/a что бы добавить статью. B/b - книгу');
+  writeln('Г‚ГўГҐГ¤ГЁГІГҐ A/a Г·ГІГ® ГЎГ» Г¤Г®ГЎГ ГўГЁГІГј Г±ГІГ ГІГјГѕ. B/b - ГЄГ­ГЁГЈГі');
   readln(ch);
-  if ch in ['A','a','Ф','ф'] then
+  if ch in ['A','a','Г”','Гґ'] then
     publ:=Tarticle.CreateEmpty
   else
-    if ch in ['B','b','И','и'] then
+    if ch in ['B','b','Г€','ГЁ'] then
       publ:=Tbook.CreateEmpty
     else
       Result:=false;
@@ -58,10 +58,10 @@ procedure SaveAs(var l:TListPbl);
 var
   name: string;
 begin
-  if PromptForFileName('Введите имя текстового файла',name,false) then
+  if PromptForFileName('Г‚ГўГҐГ¤ГЁГІГҐ ГЁГ¬Гї ГІГҐГЄГ±ГІГ®ГўГ®ГЈГ® ГґГ Г©Г«Г ',name,false) then
     begin
       l.SaveToFile(name);
-      ShowMessage('Файл создан');
+      ShowMessage('Г”Г Г©Г« Г±Г®Г§Г¤Г Г­');
     end;
 end;
 
@@ -72,7 +72,7 @@ begin
   else
     begin
       L.SaveToFile(L.FileName);
-      ShowMessage('Файл сохранен');
+      ShowMessage('Г”Г Г©Г« Г±Г®ГµГ°Г Г­ГҐГ­');
     end;
 end;
 
@@ -83,15 +83,15 @@ begin
   result:=true;
   if (l<>nil) and (l.Modified) then
   begin
-    writeln('Файл изменен'#13#10'A/a - сохранить изменения и выйти'#13#10'B/b - отмена'#13#10'Другое - выход');
+    writeln('Г”Г Г©Г« ГЁГ§Г¬ГҐГ­ГҐГ­'#13#10'A/a - Г±Г®ГµГ°Г Г­ГЁГІГј ГЁГ§Г¬ГҐГ­ГҐГ­ГЁГї ГЁ ГўГ»Г©ГІГЁ'#13#10'B/b - Г®ГІГ¬ГҐГ­Г '#13#10'Г„Г°ГіГЈГ®ГҐ - ГўГ»ГµГ®Г¤');
     readln(ch);
-    if ch in ['A','a','Ф','ф'] then
+    if ch in ['A','a','Г”','Гґ'] then
       begin
        SaveToText(l);
        result:=not l.Modified
       end
     else
-      if ch in ['B','b','И','и'] then
+      if ch in ['B','b','Г€','ГЁ'] then
           result:=false
   end;
   if Result then
@@ -103,11 +103,11 @@ begin
   if canCloselist(L) then
     begin
       L:=TListPbl.Create;
-      if InputQuery('Будете добавлять элементы (Y/N)', YesOrNo) in Yes then
+      if InputQuery('ГЃГіГ¤ГҐГІГҐ Г¤Г®ГЎГ ГўГ«ГїГІГј ГЅГ«ГҐГ¬ГҐГ­ГІГ» (Y/N)', YesOrNo) in Yes then
         repeat
           AddInfo(l);
-        until not (InputQuery('Будете еще добавлять элементы (Y/N)', YesOrNo) in Yes);
-      ShowMessage('Список создан');
+        until not (InputQuery('ГЃГіГ¤ГҐГІГҐ ГҐГ№ГҐ Г¤Г®ГЎГ ГўГ«ГїГІГј ГЅГ«ГҐГ¬ГҐГ­ГІГ» (Y/N)', YesOrNo) in Yes);
+      ShowMessage('Г‘ГЇГЁГ±Г®ГЄ Г±Г®Г§Г¤Г Г­');
     end;
 end;
 
@@ -115,7 +115,7 @@ procedure DeleteInfo(var l:TListPbl);
 var
   ind:integer;
 begin
-  ind:=InputNumber('Введите номер удаляемой публикации', 1, l.Count);
+  ind:=InputNumber('Г‚ГўГҐГ¤ГЁГІГҐ Г­Г®Г¬ГҐГ° ГіГ¤Г Г«ГїГҐГ¬Г®Г© ГЇГіГЎГ«ГЁГЄГ Г¶ГЁГЁ', 1, l.Count);
   l.Delete(ind-1);
 end;
 
@@ -124,7 +124,7 @@ var
   ind:integer;
   p:Tpublication;
 begin
-  ind:=InputNumber('Введите номер изменяемой публикации', 1, l.Count);
+  ind:=InputNumber('Г‚ГўГҐГ¤ГЁГІГҐ Г­Г®Г¬ГҐГ° ГЁГ§Г¬ГҐГ­ГїГҐГ¬Г®Г© ГЇГіГЎГ«ГЁГЄГ Г¶ГЁГЁ', 1, l.Count);
   if InputPubl(p) then
     l.Publication[ind-1]:=p;
 end;
@@ -133,7 +133,7 @@ procedure LoadFromFile(var l:TListPbl);
 var
   name : string;
 begin
-  if PromptForFileName('Введите имя текстового файла',name,true) and
+  if PromptForFileName('Г‚ГўГҐГ¤ГЁГІГҐ ГЁГ¬Гї ГІГҐГЄГ±ГІГ®ГўГ®ГЈГ® ГґГ Г©Г«Г ',name,true) and
      CanCloseList(l)
   then
     begin
@@ -141,41 +141,41 @@ begin
       if not l.LoadFromFile(Name)  then
         begin
           FreeAndNil(L);
-          writeln('Не удалось загрузить данные из файла');
+          writeln('ГЌГҐ ГіГ¤Г Г«Г®Г±Гј Г§Г ГЈГ°ГіГ§ГЁГІГј Г¤Г Г­Г­Г»ГҐ ГЁГ§ ГґГ Г©Г«Г ');
           writeln;
         end;
     end;
 end;
 
 
-//главная задача
+//ГЈГ«Г ГўГ­Г Гї Г§Г Г¤Г Г·Г 
 procedure MainTask(var l:TListPbl);
 var
   res:TListPbl;
   author, sdat, endat:string;
 begin
   res:=TListPbl.Create;
-  writeln('Введите имя автора');
+  writeln('Г‚ГўГҐГ¤ГЁГІГҐ ГЁГ¬Гї Г ГўГІГ®Г°Г ');
   readln(author);
-  writeln('Введите дату начиная с которой нужно найти публикации');
+  writeln('Г‚ГўГҐГ¤ГЁГІГҐ Г¤Г ГІГі Г­Г Г·ГЁГ­Г Гї Г± ГЄГ®ГІГ®Г°Г®Г© Г­ГіГ¦Г­Г® Г­Г Г©ГІГЁ ГЇГіГЎГ«ГЁГЄГ Г¶ГЁГЁ');
   readln(sdat);
-  writeln('Введите по которую искать');
+  writeln('Г‚ГўГҐГ¤ГЁГІГҐ ГЇГ® ГЄГ®ГІГ®Г°ГіГѕ ГЁГ±ГЄГ ГІГј');
   readln(endat);
   res:=l.Exist(author,strTodate(sdat), strTodate(endat));
   PrintList(res);
-  if InputQuery('Сохранить результат в файл? (Y/N)', YesOrNo) in Yes then
+  if InputQuery('Г‘Г®ГµГ°Г Г­ГЁГІГј Г°ГҐГ§ГіГ«ГјГІГ ГІ Гў ГґГ Г©Г«? (Y/N)', YesOrNo) in Yes then
     SaveToText(res);
   res.free;
 end;
 
-//выход из программы
+//ГўГ»ГµГ®Г¤ ГЁГ§ ГЇГ°Г®ГЈГ°Г Г¬Г¬Г»
 procedure exit(l:TListPbl; var item:integer);
 begin
   if not cancloseList(l) then
     item:=-1;
 end;
 
-//меню
+//Г¬ГҐГ­Гѕ
 var
   l:TListPbl;
   item:integer;
@@ -184,21 +184,21 @@ function GetMenuItem:integer;
 var
   MaxItem:integer;
 begin
-  writeln('1-создать список');
-  writeln('2-загрузить из файла');
+  writeln('1-Г±Г®Г§Г¤Г ГІГј Г±ГЇГЁГ±Г®ГЄ');
+  writeln('2-Г§Г ГЈГ°ГіГ§ГЁГІГј ГЁГ§ ГґГ Г©Г«Г ');
   MaxItem:=2;
   if l<>nil then
     begin
-      writeln('3-печать списка');
-      writeln('4-сохранить');
-      writeln('5-сохранить как');
-      writeln('6-добавление данных');
-      writeln('7-удаление записи');
-      writeln('8-редактирование записи');
-      writeln('9-решение основной задачи');
+      writeln('3-ГЇГҐГ·Г ГІГј Г±ГЇГЁГ±ГЄГ ');
+      writeln('4-Г±Г®ГµГ°Г Г­ГЁГІГј');
+      writeln('5-Г±Г®ГµГ°Г Г­ГЁГІГј ГЄГ ГЄ');
+      writeln('6-Г¤Г®ГЎГ ГўГ«ГҐГ­ГЁГҐ Г¤Г Г­Г­Г»Гµ');
+      writeln('7-ГіГ¤Г Г«ГҐГ­ГЁГҐ Г§Г ГЇГЁГ±ГЁ');
+      writeln('8-Г°ГҐГ¤Г ГЄГІГЁГ°Г®ГўГ Г­ГЁГҐ Г§Г ГЇГЁГ±ГЁ');
+      writeln('9-Г°ГҐГёГҐГ­ГЁГҐ Г®Г±Г­Г®ГўГ­Г®Г© Г§Г Г¤Г Г·ГЁ');
       MaxItem:=9;
     end;
-  writeln('0-выход');
+  writeln('0-ГўГ»ГµГ®Г¤');
   result:=InputNumber('',0,MaxItem);
 end;
 
