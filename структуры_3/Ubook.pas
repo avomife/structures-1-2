@@ -47,12 +47,14 @@ begin
 end;
 
 procedure Tbook.Input;
+var BookPgInput: string; code: integer;
 begin
   inherited input;
   repeat
     writeln('Ââåäèòå êîë-âî ñòðàíèö');
-    readln(fpages);
-  until fpages>0;
+    readln(BookPgInput);
+    val(bookPgInput, fpages, code);    
+  until (code=0) and (fpages>0);
 end;
 
 function Tbook.LoadFromFile(var f: TextFile): boolean;
