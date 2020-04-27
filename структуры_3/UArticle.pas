@@ -54,21 +54,21 @@ end;
 
 procedure TArticle.Input;
 var
-  hel: integer;
-  input1, input2: string;
+  hel, code: integer;
+  inputPg: string;
 begin
   inherited input;
   writeln('Ââåäèòå íàçâàíèå æóðíàëà');
   readln(fnameArt);
   repeat
     writeln('Ââåäèòå ñòðàíèöó íà÷àëà');
-    readln(input1);
-    trystrtoint(input1, fstartPg);
+    readln(inputPg);
+    val(inputPg, fstartPg, code);
     
     writeln('Ââåäèòå ñòðàíèöó êîíöà');
-    readln(input2);
-    trystrtoint(input2, fendPg);
-  until (fstartPg>0) and (fendPg>0);
+    readln(inputPg);
+    val(inputPg, fendPg, code);
+  until (code=0) (fstartPg>0) and (fendPg>0);
   if fendPg < fstartPg then
     begin
       hel := fstartPg;
