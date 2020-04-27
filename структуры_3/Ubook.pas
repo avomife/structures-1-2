@@ -43,14 +43,14 @@ end;
 
 class function Tbook.GetKind: string;
 begin
-  result:='Книга'
+  result:='ГЉГ­ГЁГЈГ '
 end;
 
 procedure Tbook.Input;
 begin
   inherited input;
-  writeln('Введите кол-во страниц');
   repeat
+    writeln('Г‚ГўГҐГ¤ГЁГІГҐ ГЄГ®Г«-ГўГ® Г±ГІГ°Г Г­ГЁГ¶');
     readln(fpages);
   until fpages>0;
 end;
@@ -67,7 +67,7 @@ end;
 procedure Tbook.SaveToFile(var f: TextFile);
 begin
   inherited SaveToFile(f);
-  writeln(f, 'Страниц: '+intTostr(fpages));
+  writeln(f, 'Г‘ГІГ°Г Г­ГЁГ¶: '+intTostr(fpages));
 end;
 
 procedure Tbook.SetPages(const Value: integer);
