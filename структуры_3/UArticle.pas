@@ -49,7 +49,7 @@ end;
 
 class function TArticle.GetKind: string;
 begin
-  result:='Ñòàòüÿ'
+  result:='Ã‘Ã²Ã Ã²Ã¿'
 end;
 
 procedure TArticle.Input;
@@ -57,12 +57,12 @@ var
   hel: integer;
 begin
   inherited input;
-  writeln('Ââåäèòå íàçâàíèå æóðíàëà');
+  writeln('Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã¦Ã³Ã°Ã­Ã Ã«Ã ');
   readln(fnameArt);
   repeat
-    writeln('Ââåäèòå ñòðàíèöó íà÷àëà');
+    writeln('Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã±Ã²Ã°Ã Ã­Ã¨Ã¶Ã³ Ã­Ã Ã·Ã Ã«Ã ');
     readln(fstartPg);
-    writeln('Ââåäèòå ñòðàíèöó êîíöà');
+    writeln('Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã±Ã²Ã°Ã Ã­Ã¨Ã¶Ã³ ÃªÃ®Ã­Ã¶Ã ');
     readln(fendPg);
   until (fstartPg>0) and (fendPg>0);
   if fendPg < fstartPg then
@@ -89,9 +89,9 @@ end;
 procedure TArticle.SaveToFile(var f: TextFile);
 begin
   inherited SaveToFile(f);
-  writeln(f, 'Íàçâàíèå æóðíàëà: '+fnameArt);
-  writeln(f, 'Íà÷àëî: '+intTostr(fstartPg));
-  writeln(f, 'Êîíåö: '+intTostr(fendPg));
+  writeln(f, 'ÃÃ Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã¦Ã³Ã°Ã­Ã Ã«Ã : '+fnameArt);
+  writeln(f, 'ÃÃ Ã·Ã Ã«Ã®: '+intTostr(fstartPg));
+  writeln(f, 'ÃŠÃ®Ã­Ã¥Ã¶: '+intTostr(fendPg));
 end;
 
 procedure TArticle.SetPg(astartPg, aendPg:integer);
